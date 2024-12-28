@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(243, 238, 238);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container .circle {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 360px;
+}
+.container .circle-1 {
+  animation: anim-1 cubic-bezier(0.2, 0.82, 0.265, 0.82) 4s infinite;
+  animation-delay: 40ms;
+}
+.container .circle-2 {
+  animation: anim-2 cubic-bezier(0.2, 0.82, 0.265, 0.82) 4s infinite;
+  animation-delay: 40ms;
+}
+.container .circle-3 {
+  animation: anim-3 cubic-bezier(0.2, 0.82, 0.265, 0.82) 4s infinite;
+  animation-delay: 40ms;
+}
+.container .circle-4 {
+  animation: anim-4 cubic-bezier(0.2, 0.82, 0.265, 0.82) 4s infinite;
+  animation-delay: 40ms;
+}
+
+@keyframes anim-1 {
+  0% {
+    transform: translateX(-130vw);
+  }
+  50% {
+    transform: translateX(0);
+    background-color: rgb(4, 144, 97);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+@keyframes anim-2 {
+  0% {
+    transform: translateX(-120vw);
+  }
+  50% {
+    transform: translateX(0);
+    background-color: rgb(248, 180, 98);
+  }
+  100% {
+    transform: translateX(110vw);
+  }
+}
+@keyframes anim-3 {
+  0% {
+    transform: translateX(-110vw);
+  }
+  50% {
+    transform: translateX(0);
+    background-color: rgb(252, 78, 78);
+  }
+  100% {
+    transform: translateX(120vw);
+  }
+}
+@keyframes anim-4 {
+  0% {
+    transform: translateX(-100vw);
+  }
+  50% {
+    transform: translateX(0);
+    background-color: rgb(7, 126, 211);
+  }
+  100% {
+    transform: translateX(130vw);
+  }
+}/*# sourceMappingURL=style.css.map */
